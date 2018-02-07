@@ -1,0 +1,30 @@
+*descriptions textuels "Créer une proposition de vente"
+Scénario nominal: 
+1. le client fait une demande auprès du vendeur pour l'achat d'un véhicule
+2. le vendeur demande à créer une proposition de vente
+3. le système demande les informations du cloent
+4. le vendeur renseigne le nom et le prnéom du client
+5. le s recherche les clients ayant ce nom et ce prenom et les affiche
+6. le vendeur sélectionne un client
+7. le s demande le modèle de vehicule et s'il s'agot d'un vehicule neuf ou occasion
+8. le vendeir choisit le modèle et type de véhicule
+9. le s affiche les véhicules correspondant au choix du vendeur
+10. le vendeur sélectionne un véhicule
+11. le s calcule le prix et affiche la proposition
+12. le vendeur valide la proposition
+13. le vendeur demande l'impression de la proposition
+14. le système imprime la proposition
+
+extionsions:
+5a le systeme ne trouve aucun client enregistré
+	1 le système demande les informations pour enregistrer le client
+	2 le vendeur renseigne les informations
+	3 le s enregistre le client
+		3a tous les champs obligatoires ne soint pas renseignés 
+			1 Le système affiche un message et revient au point 1	
+
+9a le systeme ne trouve aucun véhicule neuf correspondant au modèle 
+	1 le scénario se poursuit au point 11 du SN
+
+9b le système ne trouve aucun véhicule d'occasiion correspondant au modèle
+	1 le système affiche un message
