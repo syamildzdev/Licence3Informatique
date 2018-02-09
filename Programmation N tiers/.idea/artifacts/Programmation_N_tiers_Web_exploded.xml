@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Programmation N tiers:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Programmation_N_tiers_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Programmation N tiers/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Programmation N tiers" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
