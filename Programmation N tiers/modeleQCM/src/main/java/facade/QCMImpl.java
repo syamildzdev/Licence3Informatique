@@ -37,9 +37,9 @@ public class QCMImpl implements GestionQCM, AdminQCM {
 
     private void initialiserDAO() {
         this.utilisateursMap.put("yohan", new Utilisateur("yohan", "yohan"));
-        this.utilisateursMap.put("fred", new Utilisateur("fred", "fred"));
+        this.utilisateursMap.put("syamil", new Utilisateur("syamil", "syamil"));
 
-        this.administrateurs.add("yohan");
+        this.administrateurs.add("syamil");
 
         /**
          * Mathématiques

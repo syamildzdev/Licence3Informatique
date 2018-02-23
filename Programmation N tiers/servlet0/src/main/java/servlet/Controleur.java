@@ -11,67 +11,65 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collection;
 
 public class Controleur extends HttpServlet {
 
-    @Override
-    public void destroy() {
-        super.destroy();
-    }
-
-    @Override
-    public void init() throws ServletException {
-        facade = new QCMImpl();
-    }
-
     private GestionQCM facade;
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost(req, resp);
+    public void init() throws ServletException{
+        facade = new QCMImpl();
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String s = req.getParameter("action");
-        switch(s){
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+
+        PrintWriter out = response.getWriter();
+        out.println("<html><title>un qcm</title><body>");
+
+        if (action == null) {
+            action = "login";
+        }
+
+        switch (action) {
             case "login":
-                req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req,resp);
+                request.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(request, response);
                 break;
             case "connect":
-                String login = req.getParameter("login");
-                String password = req.getParameter("password");
+                String login = request.getParameter("login");
+                String password = request.getParameter("password");
+
                 try {
-                    facade.connexion(login,password);
-                    req.getSession(true).setAttribute("currentuser",login);
-                    //aller au menu
-                    req.getRequestDispatcher("/WEB-INF/views/menu.html").forward(req,resp);
-                } catch (UtilisateurDejaConnecteException e) {
-                    //aller au menu
-                    req.getRequestDispatcher("/WEB-INF/views/menu.html").forward(req,resp);
-                } catch (InformationsSaisiesIncoherentesException e) {
-                    //aller à la page de login
-                    //ajout parametre de la session
-                    req.getSession().setAttribute("message","Erreur! Login ou password incorrect");
-                    req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req,resp);
+                    facade.connexion(login, password);
+                    // login
+                    request.getSession(true).setAttribute("pseudo", login);
+                    request.getRequestDispatcher("/WEB-INF/view/menu.jsp").forward(request, response);
+                } catch(UtilisateurDejaConnecteException e) {
+                    request.getRequestDispatcher("/WEB-INF/view/menu.jsp").forward(request, response);
+                } catch (InformationsSaisiesIncoherentesException e){
+                    request.getRequestDispatcher("/WEB-INF/view/login.jsp").forward(request,response);
                 }
                 break;
             case "choixQCM":
-                //Obtenir la liste des questionnaires pour l'utilisateur actuel
-                String currentuser = (String)req.getSession(true).getAttribute("currentuser");
-                Collection<Questionnaire> listeQcm = facade.getListQuestionnairesNonFaits(currentuser);
-                req.setAttribute("listeQcm",listeQcm);
-                req.getRequestDispatcher("/WEB-INF/views/choixQCM.jsp").forward(req,resp);
+                login = (String)request.getSession(true).getAttribute("currentuser");
+                Collection<Questionnaire> listeQcm = facade.getListQuestionnairesNonFaits(login);
+                request.setAttribute("listeQcm",listeQcm);
+                request.getRequestDispatcher("/WEB-INF/view/choixQCM.jsp").forward(request, response);
                 break;
             case "lancerQcm":
-                login = (String)req.getSession().getAttribute("currentuser");
-                int idQuestionnaire = Integer.valueOf(((Questionnaire)req.getSession().getAttribute("idQuestionnaire"));
-                int idQuestion = Integer.parseInt(req.getParameter("idQuestion"));
-                facade.validerQuestion(login,idQuestion,reponse);
+                login = (String)request.getSession().getAttribute("pseudo");
+                //int idQuestionnaire = Integer.valueOf(((Questionnaire)request.getSession().getAttribute("idQuestionnaire")));
+                int idQuestion = Integer.parseInt(request.getParameter("idQuestion"));
+                //String reponse = "";
+                //facade.validerQuestion(login,idQuestion,reponse);
                 break;
-
 
             default:
                 break;

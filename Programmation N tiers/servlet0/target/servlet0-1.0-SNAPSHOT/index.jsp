@@ -6,7 +6,7 @@
 </head>
 <body>
 <p>EL activée ? ${3 + 4}</p>
-<a href="/hello">Lancer la servlet à la main</a>
-<c:redirect url="/run?action=login"></c:redirect>
+<a href="/run">Lancer la servlet</a>
+<c:redirect url="/run? action=gotoLogin"></c:redirect>
 </body>
 </html>

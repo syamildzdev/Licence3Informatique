@@ -11,12 +11,23 @@ import java.io.PrintWriter;
  * Created by Fred on 15/09/2016.
  */
 public class MaServlet extends HttpServlet {
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        String action = request.getParameter("action");
+
         PrintWriter out = response.getWriter();
-        out.println("<html><body>Hello !</body></html>");
+        out.println("<html><title>un qcm</title><body>");
+
+        if (action == null) {
+            action = "login";
+        }
+
     }
+
+
 }
