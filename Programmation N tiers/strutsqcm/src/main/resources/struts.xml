@@ -28,7 +28,7 @@
         </action>
 
         <!--- But aujourd'hui -->
-        <action name="questioncourate" class="actions.qcms.QuestionCourante" method="validerQcm">
+        <action name="questioncourante" class="actions.qcms.QuestionCourante" method="validerQcm">
             <result>/WEB-INF/questionCourante.jsp</result>
         </action>
 

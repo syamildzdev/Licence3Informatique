@@ -37,7 +37,7 @@ public class QuestionCourante extends Environnement {
             return "question";
         } else {
             resultat = getFacade().validerQuestionnaire(login);
-            return "reponse";
+            return "resultat";
         }
 
     }

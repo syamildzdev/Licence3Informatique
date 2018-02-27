@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<s:form action="validercorrection">
+<s:form action="validerquestion">
     <s:select name="reponse" list="%{questionReponse.reponsesPossibles}" label="%{questionReponse.question}"></s:select>
     <s:hidden name="idQuestion" value="%{questionReponse.idQuestion}"/>
     <s:submit/>

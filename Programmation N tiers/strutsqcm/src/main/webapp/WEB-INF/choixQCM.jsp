@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<s:form action="questioncourate">
+<s:form action="questioncourante">
     <s:select name="idQuestionnaire" list="%{qcms}" listKey="idQuestionnaire" listValue="libelleQuestionnaire" key="choixqcm.select"/>
     <s:submit/>
 </s:form>

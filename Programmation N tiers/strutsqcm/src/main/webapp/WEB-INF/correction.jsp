@@ -20,7 +20,7 @@
 
     <s:iterator value="%{correction}" var="correction">
         <li>
-            <s:text name=""/><s:property value="#correction.question"/>
+            <s:text name="correction.question"/><s:property value="#correction.question"/>
             <s:property value="#correction.reponseDonnee"/>
             <s:property value="#correction.reponseAttendue"/>
 
