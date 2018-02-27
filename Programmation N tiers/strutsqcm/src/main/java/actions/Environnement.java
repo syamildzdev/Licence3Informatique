@@ -14,12 +14,15 @@ public class Environnement extends ActionSupport implements ApplicationAware, Se
 
     private GestionQCM facade;
 
+    public static final String ID_QUESTIONNAIRE = "0";
+
     @Override // ApplicationAware
     public void setApplication(Map<String, Object> map) {
         facade = (GestionQCM) map.get("facade");
         if(facade == null) {
             facade = new QCMImpl();
             map.put("facade", facade);
+            map.put("idQuestionnaire", ID_QUESTIONNAIRE);
         }
         // tout le monde aura le meme facade
     }

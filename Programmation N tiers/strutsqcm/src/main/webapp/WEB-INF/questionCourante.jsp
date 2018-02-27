@@ -13,5 +13,9 @@
 </head>
 <body>
 
+<s:form>
+    <s:select list="%{questionReponse.reponsesPossibles}" label="%{questionReponse.question}"/>
+</s:form>
+
 </body>
 </html>

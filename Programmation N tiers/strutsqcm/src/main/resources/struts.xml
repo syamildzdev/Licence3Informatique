@@ -27,7 +27,8 @@
             <result>/WEB-INF/choixQCM.jsp</result>
         </action>
 
-        <action name="questioncourate">
+        <!--- But aujourd'hui -->
+        <action name="questioncourate" class="actions.qcms.ValiderChoixQCM">
             <result>/WEB-INF/questionCourante.jsp</result>
         </action>
 
@@ -35,16 +36,17 @@
             <result name="resultat">/WEB-INF/resultat.jsp</result>
             <result name="question">/WEB-INF/questionCourante.jsp</result>
         </action>
+        <!--- Jusqu'ici -->
 
         <action name="gotomenu">
             <result>WEB-INF/menu.jsp</result>
         </action>
 
-        <action name="gotocorrection">
+        <action name="gotocorrection" class="actions.corrections.GoToChoixCorrection">
             <result>WEB-INF/choixCorrection.jsp</result>
         </action>
 
-        <action name="validercorrection">
+        <action name="validercorrection" class="actions.corrections.ValiderCorrection">
             <result>WEB-INF/correction.jsp</result>
         </action>
 

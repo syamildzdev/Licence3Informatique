@@ -14,7 +14,7 @@
 <body>
 
 <s:form action="questioncourate">
-    <s:select list="%{qcms}" listKey="idQuestionnaire" listValue="libelleQuestionnaire" key="choixqcm.select"/>
+    <s:select name="idQuestionnaire" list="%{qcms}" listKey="idQuestionnaire" listValue="libelleQuestionnaire" key="choixqcm.select"/>
     <s:submit/>
 </s:form>
 

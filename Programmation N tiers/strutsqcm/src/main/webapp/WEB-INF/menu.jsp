@@ -16,6 +16,7 @@
 <s:text name="menu.texte1"/>
 <ul>
     <li><s:a action="gotochoixqcm"><s:text name="menu.choixqcm"></s:text></s:a></li>
+    <li><s:a action="gotocorrection"><s:text name="menu.correction"></s:text></s:a></li>
     <li><s:a action="deconnexion"><s:text name="menu.deconnexion"/></s:a></li>
 </ul>
 </body>
