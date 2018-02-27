@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: o2175179
@@ -11,6 +12,8 @@
     <title>Title</title>
 </head>
 <body>
+
+<s:property value="%{resultat}"/>
 
 </body>
 </html>

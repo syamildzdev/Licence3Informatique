@@ -13,8 +13,10 @@
 </head>
 <body>
 
-<s:form>
-    <s:select list="%{questionReponse.reponsesPossibles}" label="%{questionReponse.question}"/>
+<s:form action="validercorrection">
+    <s:select name="reponse" list="%{questionReponse.reponsesPossibles}" label="%{questionReponse.question}"></s:select>
+    <s:hidden name="idQuestion" value="%{questionReponse.idQuestion}"/>
+    <s:submit/>
 </s:form>
 
 </body>

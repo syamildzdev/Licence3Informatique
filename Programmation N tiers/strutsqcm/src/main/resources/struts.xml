@@ -28,11 +28,11 @@
         </action>
 
         <!--- But aujourd'hui -->
-        <action name="questioncourate" class="actions.qcms.ValiderChoixQCM">
+        <action name="questioncourate" class="actions.qcms.QuestionCourante" method="validerQcm">
             <result>/WEB-INF/questionCourante.jsp</result>
         </action>
 
-        <action name="validerquestion">
+        <action name="validerquestion" class="actions.qcms.QuestionCourante" method="validerQuestionCourante">
             <result name="resultat">/WEB-INF/resultat.jsp</result>
             <result name="question">/WEB-INF/questionCourante.jsp</result>
         </action>
