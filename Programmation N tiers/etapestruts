@@ -1,0 +1,56 @@
+1. creer projet maven -> next
+2. copier coller pom.xml (packaging -----> dependencies)
+3. FIle -> Project structure -> web -> web project directory (double click -> ok)
+-> clique sur + -> web.xml -> OK!
+4. Deplacer le fichier WEB-INF dans webapp
+5. recuperer le contenu de de web.xml
+6. créer un fichier struts.xml dans recources
+7. recuperer struts.xml
+8. file -> settings -> cherche encoding -> choisit default encoding ISO-8859-1 ->
+cochez transparent ... 
+9. creer page connexion.jsp (premiere page) dans web-inf
+10. dans struts ajout : (dans package)  
+	<default-action-ref name="home"/>
+        <action name="home">
+            <result>/WEB-INF/connexion.jsp</result>
+        </action> 
+11. edit tomcat local configuration
+12. resources -> create properties file (mesTextes.properties)
+13. connexion.jsp ->  ajout des tags 
+<title><s:text name="conenxion.titre"/></title>
+<s:form>
+    <s:textfield key="connexion.login"/>
+    <s:password key="connexion.password"/>
+    <s:submit/>
+</s:form>
+14. struts.xml -> appeler le fichier properties
+<constant name="struts.custom.i18n.resources" value="mesTextes"/>
+15. Creer les pages .jsp dont on a besoin
+16. struts.xml -> creer les actions pour la navigation de toutes les pages :
+	<action name="connexion">
+            <result name="success">/WEB-INF/menu.jsp</result>
+            <result name="input">/WEB-INF/connexion.jsp</result>
+        </action> 
+etc ...
+17. creer packages dans java et une classe Environnement
+
+ainsi suites ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
