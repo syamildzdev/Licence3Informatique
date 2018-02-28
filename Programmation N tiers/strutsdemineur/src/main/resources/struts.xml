@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.custom.i18n.resources" value="mesTextes"/>
+
+    <package name="/" extends="struts-default">
+
+        <default-action-ref name="home"/>
+
+        <action name="home">
+            <result>/WEB-INF/connexion.jsp</result>
+        </action>
+
+        <action name="connexion" class="actions.connexion.Connexion">
+            <result name="success">/WEB-INF/partie.jsp</result>
+            <result name="input">/WEB-INF/connexion.jsp</result>
+        </action>
+
+        <action name="rejouer">
+            <result>/WEB-INF/partie.jsp</result>
+        </action>
+
+        <action name="perdu">
+            <result>/WEB-INF/resultat.jsp</result>
+        </action>
+
+        <action name="gagne">
+            <result>/WEB-INF/resultat.jsp</result>
+        </action>
+
+        <action name="tryagain">
+            <result>/WEB-INF/partie.jsp</result>
+        </action>
+
+        <action name="deconnexion" class="actions.connexion.Deconnexion">
+            <result>/WEB-INF/connexion.jsp</result>
+        </action>
+
+    </package>
+
+</struts>
