@@ -6,6 +6,12 @@
 5. recuperer le contenu de de web.xml
 6. créer un fichier struts.xml dans recources
 7. recuperer struts.xml
+
+7.1 : Import modele dans dependency
+	-Ajout une nouvelle <dependency>groupid, artifactid, version</dependancy> 
+	-Ouvrir le projet modele
+	-Maven projects -> modele -> lifecycle -> install 
+
 8. file -> settings -> cherche encoding -> choisit default encoding ISO-8859-1 ->
 cochez transparent ... 
 9. creer page connexion.jsp (premiere page) dans web-inf
