@@ -9,17 +9,18 @@ import java.util.Map;
 
 public class Environnement extends ActionSupport implements ApplicationAware, SessionAware {
 
-    protected Map<String, Object> variablesSession;
+    private Map<String, Object> variablesSession;
 
-    protected GestionDemineur demineur;
+    private GestionDemineur facade;
 
     @Override // ApplicationAware
     public void setApplication(Map<String, Object> map) {
-        if(!map.containsKey("demineur")){
-            map.put("domineur",new GestionDemineur());
-        }
+        facade = (GestionDemineur) map.get("facade");
 
-        demineur = (GestionDemineur) map.get("demineur");
+        if(facade==null){
+            facade = new GestionDemineur();
+            map.put("facade", facade);
+        }
     }
 
     @Override // SessionAware
@@ -34,8 +35,8 @@ public class Environnement extends ActionSupport implements ApplicationAware, Se
         return variablesSession;
     }
 
-    public GestionDemineur getDemineur() {
-        return demineur;
+    public GestionDemineur getFacade() {
+        return facade;
     }
 
 }

@@ -13,7 +13,7 @@ public class Connexion extends Environnement {
     public String execute() {
 
         try {
-            demineur.connexion(pseudo);
+            getFacade().connexion(pseudo);
             getVariablesSession().put("pseudo", pseudo);
 
             return SUCCESS;
@@ -25,7 +25,7 @@ public class Connexion extends Environnement {
     }
 
     public Case[][] getPlateau(){
-        return demineur.getPlateau(pseudo).getMonPlateau();
+        return getFacade().getPlateau(pseudo).getMonPlateau();
     }
 
     @Override
