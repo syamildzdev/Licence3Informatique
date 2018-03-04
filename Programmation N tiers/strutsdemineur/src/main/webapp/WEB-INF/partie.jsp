@@ -14,10 +14,18 @@
 <body>
 <table>
 
-    <s:iterator value="%{plateau}" var="x">
-        <s:iterator value="%{plateau}" var="y">
-            <li><s:property /></li>
-        </s:iterator>
+    <s:iterator value="plateau" status="plateauStatus">
+        <tr>
+            <s:if test="#plateauStatus.even == true">
+                <td style="background: #CCCCCC"><s:property/></td>
+            </s:if>
+            <s:elseif test="#plateauStatus.first == true">
+                <td><s:property/> (This is first value) </td>
+            </s:elseif>
+            <s:else>
+                <td><s:property/></td>
+            </s:else>
+        </tr>
     </s:iterator>
 
 </table>
