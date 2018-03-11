@@ -25,7 +25,7 @@ public class Environnement extends ActionSupport implements ApplicationAware, Se
 
     @Override // SessionAware
     public void setSession(Map<String, Object> map) {
-        //variablesSession = map;
+        variablesSession = map;
 
     }
 
