@@ -34,6 +34,10 @@ public class Connexion extends Environnement {
             addFieldError("pseudo", getText("Connexion.erreur2"));
     }
 
+    public String getString() {
+        return getFacade().getPlateau((String) getVariablesSession().get(LOGIN)).getMonPlateau().toString();
+    }
+
     // Getters & Setters
 
     public String getPseudo() {

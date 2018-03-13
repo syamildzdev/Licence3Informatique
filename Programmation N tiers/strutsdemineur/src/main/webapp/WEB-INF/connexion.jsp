@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<s:form name="connexion">
+<s:form action="connexion">
     <s:textfield name="pseudo" key="connexion.pseudo"/>
     <s:submit/>
 </s:form>

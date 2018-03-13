@@ -14,20 +14,19 @@
 <body>
 <table>
 
-    <s:iterator value="plateau" status="plateauStatus">
+    <s:iterator value="%{plateau}" var="myPlateau" status="x">
         <tr>
-            <s:if test="#plateauStatus.even == true">
-                <td style="background: #CCCCCC"><s:property/></td>
-            </s:if>
-            <s:elseif test="#plateauStatus.first == true">
-                <td><s:property/> (This is first value) </td>
-            </s:elseif>
-            <s:else>
-                <td><s:property/></td>
-            </s:else>
+        <s:iterator var="maCase" value="#myPlateau" status="y">
+            <td>
+                <s:property value="#maCase.valeur"/>
+ <%--            <s:property value="#x.index"/>,
+                <s:property value="#y.index"/>
+--%>
+                
+            </td>
+        </s:iterator>
         </tr>
     </s:iterator>
-
 </table>
 
 
