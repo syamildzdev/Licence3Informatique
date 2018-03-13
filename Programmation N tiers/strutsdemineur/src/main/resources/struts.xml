@@ -19,12 +19,12 @@
             <result name="input">/WEB-INF/connexion.jsp</result>
         </action>
 
-        <action name="jouer">
+        <action name="jouer" class="actions.jouer.Jouer">
             <result name="encore">/WEB-INF/jeu.jsp</result>
             <result name="gagne">/WEB-INF/resultat.jsp</result>
             <result name="perdu">/WEB-INF/resultat.jsp</result>
         </action>
-        
+
         <action name="deconnexion" class="actions.connexion.Deconnexion">
             <result>/WEB-INF/connexion.jsp</result>
         </action>
