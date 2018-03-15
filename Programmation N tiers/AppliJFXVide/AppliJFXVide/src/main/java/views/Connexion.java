@@ -16,7 +16,7 @@ import java.net.URL;
 /**
  * Created by YohanBoichut on 10/11/15.
  */
-public class MaVue {
+public class Connexion {
 
 
     private Controleur monControleur;
@@ -33,8 +33,8 @@ public class MaVue {
     @FXML
     private TextField monChamp;
 
-    public static MaVue creerInstance(Controleur c) {
-        URL location = MaVue.class.getResource("/views/sample.fxml");
+    public static Connexion creerInstance(Controleur c) {
+        URL location = Connexion.class.getResource("/views/login.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = null;
         try {
@@ -42,7 +42,7 @@ public class MaVue {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        MaVue vue = fxmlLoader.getController();
+        Connexion vue = fxmlLoader.getController();
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));

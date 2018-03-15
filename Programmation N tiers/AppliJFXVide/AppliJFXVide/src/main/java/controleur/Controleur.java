@@ -1,6 +1,8 @@
 package controleur;
 
-import views.MaVue;
+import modele.GestionDemineur;
+import views.Connexion;
+import views.Resultat;
 
 /**
  * Created by YohanBoichut on 10/11/15.
@@ -8,11 +10,17 @@ import views.MaVue;
 public class Controleur {
 
 
-    private MaVue maVue;
-
+    private Connexion connexion;
+    private GestionDemineur gestionDemineur;
 
     public Controleur() {
-        this.maVue = MaVue.creerInstance(this);
+
+        this.connexion = Connexion.creerInstance(this);
+        this.gestionDemineur = new GestionDemineur();
+
     }
 
+    public GestionDemineur getGestionDemineur() {
+        return gestionDemineur;
+    }
 }
