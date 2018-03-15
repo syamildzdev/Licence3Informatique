@@ -8,6 +8,8 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/fr/miage/orleans/tp/ModeleDemineur/1.1/ModeleDemineur-1.1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/fr/miage/orleans/tp/ModeleDemineur/1.1/ModeleDemineur-1.1.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/fr/miage/orleans/tp/ModeleDemineur" />
     </SOURCES>
   </library>
 </component>
