@@ -18,11 +18,20 @@
         <tr>
         <s:iterator var="maCase" value="#myPlateau" status="y">
             <td>
-                <s:property value="#maCase.valeur"/>
+                <s:if test="#maCase.cachee">
+                    <s:url action="jouer" var="url"></s:url>
+                    <s:a href="%{url}">?</s:a>
+                </s:if>
+                <s:else>
+                    <s:property value="#maCase.valeur"/>
+                </s:else>
  <%--            <s:property value="#x.index"/>,
                 <s:property value="#y.index"/>
+
+                pour les images :
+                <img src="img/box${maCase.valeur}">
 --%>
-                
+
             </td>
         </s:iterator>
         </tr>

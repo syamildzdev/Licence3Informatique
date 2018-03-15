@@ -6,7 +6,6 @@
     <constant name="struts.devMode" value="true" />
     <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <constant name="struts.custom.i18n.resources" value="mesTextes"/>
-
     <package name="/" extends="struts-default">
 
         <default-action-ref name="home"/>
@@ -16,24 +15,14 @@
         </action>
 
         <action name="connexion" class="actions.connexion.Connexion">
-            <result name="success">/WEB-INF/partie.jsp</result>
+            <result name="success">/WEB-INF/jeu.jsp</result>
             <result name="input">/WEB-INF/connexion.jsp</result>
         </action>
 
-        <action name="rejouer">
-            <result>/WEB-INF/partie.jsp</result>
-        </action>
-
-        <action name="perdu">
-            <result>/WEB-INF/resultat.jsp</result>
-        </action>
-
-        <action name="gagne">
-            <result>/WEB-INF/resultat.jsp</result>
-        </action>
-
-        <action name="tryagain">
-            <result>/WEB-INF/partie.jsp</result>
+        <action name="jouer" class="actions.jouer.Jouer">
+            <result name="encore">/WEB-INF/jeu.jsp</result>
+            <result name="gagne">/WEB-INF/resultat.jsp</result>
+            <result name="perdu">/WEB-INF/resultat.jsp</result>
         </action>
 
         <action name="deconnexion" class="actions.connexion.Deconnexion">
