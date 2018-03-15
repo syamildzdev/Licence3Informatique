@@ -1,4 +1,4 @@
-package views;
+package views.jfx;
 
 import controleur.Controleur;
 import javafx.event.ActionEvent;
@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import views.ConnexionInterface;
+import views.JeuInterface;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,7 +18,7 @@ import java.net.URL;
 /**
  * Created by YohanBoichut on 10/11/15.
  */
-public class Connexion {
+public class Jeu implements JeuInterface {
 
 
     private Controleur monControleur;
@@ -28,13 +30,17 @@ public class Connexion {
     @FXML
     private Button monBouton;
 
+    private Stage primaryStage;
 
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
 
     @FXML
     private TextField monChamp;
 
-    public static Connexion creerInstance(Controleur c) {
-        URL location = Connexion.class.getResource("/views/login.fxml");
+    public static Jeu creerInstance(Controleur c, Stage primaryStage) {
+        URL location = Jeu.class.getResource("/views/jfx/login.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = null;
         try {
@@ -42,8 +48,8 @@ public class Connexion {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Connexion vue = fxmlLoader.getController();
-        Stage primaryStage = new Stage();
+        Jeu vue = fxmlLoader.getController();
+        vue.setPrimaryStage(primaryStage);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
@@ -58,5 +64,15 @@ public class Connexion {
 
     public void setMonChamp(String affichage) {
         this.monChamp.setText(affichage);
+    }
+
+    @Override
+    public void show() {
+
+    }
+
+    @Override
+    public void showMessageErreur(String messageErreur) {
+
     }
 }

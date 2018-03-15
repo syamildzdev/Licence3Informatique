@@ -1,8 +1,10 @@
 package controleur;
 
+import javafx.stage.Stage;
 import modele.GestionDemineur;
-import views.Connexion;
-import views.Resultat;
+import views.ConnexionInterface;
+import views.FabriqueVues;
+import views.jfx.Connexion;
 
 /**
  * Created by YohanBoichut on 10/11/15.
@@ -10,17 +12,25 @@ import views.Resultat;
 public class Controleur {
 
 
-    private Connexion connexion;
+    private ConnexionInterface maVue;
+    private FabriqueVues fabriqueVues;
+
     private GestionDemineur gestionDemineur;
 
-    public Controleur() {
+    public Controleur(FabriqueVues fabriqueVues) {
 
-        this.connexion = Connexion.creerInstance(this);
+        this.fabriqueVues = fabriqueVues;
+        this.maVue = this.fabriqueVues.buildConnexionView(this);
         this.gestionDemineur = new GestionDemineur();
+        this.maVue.show();
 
     }
+
+
 
     public GestionDemineur getGestionDemineur() {
         return gestionDemineur;
     }
+
+
 }

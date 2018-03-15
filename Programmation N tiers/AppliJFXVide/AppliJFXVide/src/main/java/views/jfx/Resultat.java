@@ -1,4 +1,4 @@
-package views;
+package views.jfx;
 
 import controleur.Controleur;
 import javafx.event.ActionEvent;
@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import views.ResultatInterface;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,7 +17,7 @@ import java.net.URL;
 /**
  * Created by YohanBoichut on 10/11/15.
  */
-public class Jeu {
+public class Resultat implements ResultatInterface {
 
 
     private Controleur monControleur;
@@ -28,13 +29,17 @@ public class Jeu {
     @FXML
     private Button monBouton;
 
+    private Stage primaryStage;
 
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
 
     @FXML
     private TextField monChamp;
 
-    public static Jeu creerInstance(Controleur c) {
-        URL location = Jeu.class.getResource("/views/login.fxml");
+    public static Resultat creerInstance(Controleur c, Stage primaryStage) {
+        URL location = Resultat.class.getResource("/views/jfx/resultat.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
         Parent root = null;
         try {
@@ -42,8 +47,8 @@ public class Jeu {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Jeu vue = fxmlLoader.getController();
-        Stage primaryStage = new Stage();
+        Resultat vue = fxmlLoader.getController();
+        vue.setPrimaryStage(primaryStage);
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
@@ -58,5 +63,15 @@ public class Jeu {
 
     public void setMonChamp(String affichage) {
         this.monChamp.setText(affichage);
+    }
+
+    @Override
+    public void show() {
+
+    }
+
+    @Override
+    public void showMessageErreur(String messageErreur) {
+
     }
 }
