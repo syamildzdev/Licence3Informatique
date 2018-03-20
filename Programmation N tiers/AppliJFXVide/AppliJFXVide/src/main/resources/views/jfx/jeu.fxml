@@ -10,16 +10,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.jfx.Jeu">
+<VBox fx:id="topNiveau" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.jfx.Jeu">
    <children>
-      <Button fx:id="monBouton" mnemonicParsing="false" onAction="#cliquer" text="Go!" />
-      <TextField fx:id="monChamp" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="50.0" />
+      <GridPane fx:id="gridpane"/>
       <Label text="This is my game!" />
    </children>
-   <opaqueInsets>
-      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-   </opaqueInsets>
-   <cursor>
-      <Cursor fx:constant="SE_RESIZE" />
-   </cursor>
 </VBox>

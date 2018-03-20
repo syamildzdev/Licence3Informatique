@@ -35,9 +35,13 @@ public class Connexion implements ConnexionInterface {
     private TextField monChamp;
 
     @FXML
-    VBox topNiveau;
+    VBox vboxLogin;
 
     private Stage primaryStage;
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
+    }
 
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
@@ -60,24 +64,7 @@ public class Connexion implements ConnexionInterface {
 
 
     public void cliquer(ActionEvent actionEvent) {
-
-        URL location = Connexion.class.getResource("/views/jfx/jeu.fxml");
-        FXMLLoader fxmlLoader = new FXMLLoader(location);
-        Parent root = null;
-
-        try {
-            monControleur.getGestionDemineur().connexion(getmonChamp());
-            root = (Parent) fxmlLoader.load();
-            primaryStage.setScene(new Scene(root, 300, 300));
-        }
-        catch (ExceptionLoginDejaPris e) {
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        //setmonChamp("Yeah!");
+        monControleur.connexion(getmonChamp());
     }
 
     public void setmonChamp(String affichage) {
@@ -88,8 +75,8 @@ public class Connexion implements ConnexionInterface {
 
     @Override
     public void show() {
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(topNiveau, 300, 275));
+        primaryStage.setTitle("Jeu démineur");
+        primaryStage.setScene(new Scene(vboxLogin, 300, 275));
         primaryStage.show();
     }
 
