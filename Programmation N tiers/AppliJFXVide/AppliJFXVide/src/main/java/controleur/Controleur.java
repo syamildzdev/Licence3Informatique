@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import modele.GestionDemineur;
+import modele.exceptions.BombeException;
 import modele.exceptions.ExceptionLoginDejaPris;
 import views.ConnexionInterface;
 import views.FabriqueVues;
@@ -30,7 +31,7 @@ public class Controleur {
 
     private GestionDemineur gestionDemineur;
 
-    private Button connexionButton;
+    private String login;
 
     public Controleur(FabriqueVues fabriqueVues) {
 
@@ -62,9 +63,19 @@ public class Controleur {
     }
 
 
+
+
+    // Getters & Setters
+
     public GestionDemineur getGestionDemineur() {
         return gestionDemineur;
     }
 
+    public String getLogin() {
+        return login;
+    }
 
+    public void setLogin(String login) {
+        this.login = login;
+    }
 }

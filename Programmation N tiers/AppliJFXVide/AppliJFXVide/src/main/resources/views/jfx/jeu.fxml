@@ -12,7 +12,7 @@
 
 <VBox fx:id="topNiveau" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.jfx.Jeu">
    <children>
-      <GridPane fx:id="gridpane"/>
-      <Label text="This is my game!" />
+      <GridPane fx:id="gridpane" alignment="CENTER" />
+      <Label alignment="BASELINE_CENTER" prefHeight="37.0" prefWidth="133.0" text="This is my game!" />
    </children>
 </VBox>

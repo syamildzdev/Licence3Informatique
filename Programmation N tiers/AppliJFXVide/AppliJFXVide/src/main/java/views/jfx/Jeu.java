@@ -12,6 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import modele.Case;
+import modele.exceptions.BombeException;
 import views.ConnexionInterface;
 import views.JeuInterface;
 
@@ -24,27 +25,15 @@ import java.util.ArrayList;
  */
 public class Jeu implements JeuInterface {
 
-
     private Controleur monControleur;
-
-    public void setMonControleur(Controleur monControleur) {
-        this.monControleur = monControleur;
-    }
-
-
+    private Case[][] monPlateau;
+    private Stage primaryStage;
 
     @FXML
     private GridPane gridpane;
 
     @FXML
     private ArrayList<Button> mesButtons;
-
-    private Stage primaryStage;
-
-    public void setPrimaryStage(Stage primaryStage) {
-        this.primaryStage = primaryStage;
-    }
-
 
     @FXML
     VBox topNiveau;
@@ -64,25 +53,9 @@ public class Jeu implements JeuInterface {
         return vue;
     }
 
-    public void creerPlateau(String login) {
-        Case[][] monPlateau = getPlateau(login);
-        mesButtons = new ArrayList<Button>();
-       for(int y = 0; y < monPlateau.length; y++) {
-           for(int x = 0; x < monPlateau[y].length; x++){
-                gridpane.add(new Button(" "), y, x);
-           }
-       }
-
-    }
-
-    public Case[][] getPlateau(String login) {
-        return monControleur.getGestionDemineur().getPlateau(login).getMonPlateau();
-    }
-
-
-
     @Override
     public void show() {
+        creerPlateau(monControleur.getLogin());
         primaryStage.setTitle("C'est parti !");
         primaryStage.setScene(new Scene(topNiveau, 300, 275));
         primaryStage.show();
@@ -92,4 +65,48 @@ public class Jeu implements JeuInterface {
     public void showMessageErreur(String messageErreur) {
 
     }
+
+    int i = 0;
+    public void creerPlateau(String login) {
+        monPlateau = getPlateau(login);
+        mesButtons = new ArrayList<Button>();
+        for(int y = 0; y < monPlateau.length; y++) {
+           for(int x = 0; x < monPlateau[y].length; x++){
+               mesButtons.add(new Button(" " + monPlateau[x][y].getValeur()));
+               gridpane.add(mesButtons.get(i), x, y);
+               mesButtons.get(i).setOnAction(action -> play());
+               i++;
+           }
+        }
+
+    }
+
+    public Case[][] getPlateau(String login) {
+        return monControleur.getGestionDemineur().getPlateau(login).getMonPlateau();
+    }
+
+    public void play() {
+
+        try{
+            for(int y = 0; y < monPlateau.length; y++) {
+                for(int x = 0; x < monPlateau[y].length; x++) {
+                    monControleur.getGestionDemineur().decouvrir(monControleur.getLogin(), x, y);
+
+                }
+            }
+
+        } catch (BombeException bombe) {
+
+        }
+    }
+
+    public void setMonControleur(Controleur monControleur) {
+        this.monControleur = monControleur;
+    }
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
+
+
 }

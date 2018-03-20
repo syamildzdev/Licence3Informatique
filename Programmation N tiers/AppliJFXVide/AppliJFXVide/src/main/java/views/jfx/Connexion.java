@@ -64,6 +64,7 @@ public class Connexion implements ConnexionInterface {
 
 
     public void cliquer(ActionEvent actionEvent) {
+        monControleur.setLogin(getmonChamp());
         monControleur.connexion(getmonChamp());
     }
 
@@ -75,7 +76,7 @@ public class Connexion implements ConnexionInterface {
 
     @Override
     public void show() {
-        primaryStage.setTitle("Jeu démineur");
+        primaryStage.setTitle("Connexion Jeu démineur");
         primaryStage.setScene(new Scene(vboxLogin, 300, 275));
         primaryStage.show();
     }
