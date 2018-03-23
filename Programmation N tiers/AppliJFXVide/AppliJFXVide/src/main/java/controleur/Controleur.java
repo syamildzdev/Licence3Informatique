@@ -24,9 +24,9 @@ import java.net.URL;
  */
 public class Controleur {
 
-    private ConnexionInterface maConnexionVue;
-    private JeuInterface maJeuVue;
-    private ResultatInterface maResultatVue;
+    private ConnexionInterface connexionVue;
+    private JeuInterface jeuVue;
+    private ResultatInterface resultatVue;
     private FabriqueVues fabriqueVues;
 
     private GestionDemineur gestionDemineur;
@@ -36,9 +36,9 @@ public class Controleur {
     public Controleur(FabriqueVues fabriqueVues) {
 
         this.fabriqueVues = fabriqueVues;
-        this.maConnexionVue = this.fabriqueVues.buildConnexionView(this);
+        this.connexionVue = this.fabriqueVues.buildConnexionView(this);
         this.gestionDemineur = new GestionDemineur();
-        maConnexionVue.show();
+        connexionVue.show();
 
     }
 
@@ -50,8 +50,8 @@ public class Controleur {
         try {
             gestionDemineur.connexion(login);
             root = (Parent) fxmlLoader.load();
-            maJeuVue = this.fabriqueVues.buildJeuView(this);
-            maJeuVue.show();
+            jeuVue = this.fabriqueVues.buildJeuView(this);
+            jeuVue.show();
         }
         catch (ExceptionLoginDejaPris e) {
             e.printStackTrace();
