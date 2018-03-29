@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.Menu">
+   <children>
+      <Button fx:id="btnReserver" onAction="#clickReserver" layoutX="205.0" layoutY="161.0" mnemonicParsing="false" text="Faire une réservation" />
+      <Button fx:id="btnQuitter" onAction="#quitterApplication" layoutX="205.0" layoutY="207.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="190.0" text="Quitter" />
+   </children>
+</AnchorPane>

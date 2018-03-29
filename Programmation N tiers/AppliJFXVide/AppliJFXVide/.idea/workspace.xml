@@ -2,49 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e898f9-113d-40d5-b945-8ee4386003b1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__fr_miage_orleans_tp_ModeleDemineur_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../../strutsqcm/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../../strutsqcm/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controleur/Controleur.java" afterPath="$PROJECT_DIR$/src/main/java/controleur/Controleur.java" />
-      <change beforePath="$PROJECT_DIR$/../../modeleQCM/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../modeleQCM/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../modeleQCM/target/classes/facade/QCMImpl.class" afterPath="$PROJECT_DIR$/../../modeleQCM/target/classes/facade/QCMImpl.class" />
-      <change beforePath="$PROJECT_DIR$/../../modeleQCM/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../../modeleQCM/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../../modeleQCM/target/modeleQCM-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../../modeleQCM/target/modeleQCM-1.0-SNAPSHOT.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/libraries/Maven__fr_miage_orleans_gestioncine_1_0.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/gestioncinema.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/pom.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/application/Main.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/controleur/Controleur.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/views/Menu.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/views/Placement.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/views/SelectionFilm.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/java/views/SelectionSeance.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/resources/views/menu.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/resources/views/placement.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/resources/views/selectionFilm.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../gestioncinema/src/main/resources/views/selectionSeance.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../modele29032018/gestioncine/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../../strutsqcm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../strutsqcm/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/strutsqcm.iml" afterPath="$PROJECT_DIR$/../../strutsqcm/strutsqcm.iml" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/classes/actions/Environnement.class" afterPath="$PROJECT_DIR$/../../strutsqcm/target/classes/actions/Environnement.class" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/classes/mesTextes.properties" afterPath="$PROJECT_DIR$/../../strutsqcm/target/classes/mesTextes.properties" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/classes/mesTextes_en.properties" afterPath="$PROJECT_DIR$/../../strutsqcm/target/classes/mesTextes_en.properties" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/classes/struts.xml" afterPath="$PROJECT_DIR$/../../strutsqcm/target/classes/struts.xml" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/choixCorrection.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/choixQCM.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/actions/Environnement.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/actions/connexions/Connexion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/actions/connexions/Deconnexion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/actions/qcms/GoToChoixQCM.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/mesTextes.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/mesTextes_en.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/classes/struts.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/connexion.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/correction.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.6.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.8.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/modeleQCM-1.0-SNAPSHOT.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.15.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/lib/struts2-core-2.5.13.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/menu.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/questionCourante.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/resultat.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../../strutsqcm/target/strutsqcm-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +33,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,31 +47,71 @@
       <file leaf-file-name="Controleur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controleur/Controleur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="350">
               <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jeu.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Jeu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jeu.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FabriqueVuesJFX.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/FabriqueVuesJFX.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jeu.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/views/jfx/jeu.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="450">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connexion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Connexion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-800">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resultat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Resultat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -133,10 +151,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="25" />
-    <option name="width" value="1282" />
-    <option name="height" value="1000" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -157,6 +174,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,7 +262,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -388,43 +405,44 @@
       <option name="presentableId" value="Default" />
       <updated>1521722090495</updated>
       <workItem from="1521722097281" duration="2051000" />
+      <workItem from="1522307677637" duration="4897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2051000" />
+    <option name="totallyTimeSpent" value="6948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25405404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controleur/Controleur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="1175">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
@@ -456,19 +474,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Jeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="175">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/views/jfx/jeu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/views/jfx/jeu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
           <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/FabriqueVuesJFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Resultat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Connexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-800">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controleur/Controleur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/jfx/Jeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.SelectionFilm">
+   <children>
+      <Label fx:id="selectionLabel" layoutX="171.0" layoutY="132.0" text="Selectionnez un film en diffusion" />
+      <ComboBox fx:id="lesFilms" layoutX="107.0" layoutY="181.0" prefHeight="39.0" prefWidth="358.0" promptText="Selectionnez" />
+      <Button fx:id="btnSelect" layoutX="478.0" layoutY="181.0" mnemonicParsing="false" onAction="#clickOk" text="ok" />
+      <Button fx:id="btnMenu" layoutX="261.0" layoutY="253.0" mnemonicParsing="false" onAction="#retourMenu" text="Menu" />
+   </children>
+</AnchorPane>
